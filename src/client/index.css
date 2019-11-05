@@ -10,3 +10,97 @@ code {
 
 
 
+
+/* for the tables */
+
+.container{
+  float: left;
+  display: flex;
+}
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+  
+  margin: 10%;
+  padding: 10%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+thead{
+  background-color: rgb(143, 49, 140);
+  color: white;
+}
+tr:hover {opacity: 0.5 ;}
+/* --------------- */
+
+/* for the sidebar */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  height: 6%;
+  text-align: center;
+  padding: 5%;
+}
+.bm-item:hover {
+  color: white;
+}
+/* l'icon de menu en haut á gauche */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+/* voir le darkmode  */
+/* .bm-burger-bars {
+  background: #373a47;
+} */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+.bm-cross {
+  background: #bdc3c7;
+}
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.bm-morph-shape {
+  fill: #373a47;
+}
+.bm-item-list {
+  color: #b8b7ad;
+}
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.floatLeft{
+  text-align: center;
+float: left;
+display: flex;
+margin-right: 3%;
+}
+.floatLeft2{
+  text-align: center;
+
+  margin: 2%;
+  }
+/* ------------------- */
+/* Material UI*/
+
+button[type="button"]{
+  background-color: #af71b3;
+  color: white!important;
+}
+
+/* ------------------- */
+/* switch darkmode*/
