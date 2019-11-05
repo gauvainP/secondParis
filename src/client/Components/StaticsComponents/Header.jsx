@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../index';
 import SwitchDark from '../DarkMode/Switch';
 import '../DarkMode/index.css';
-import '../../App.css';
+//`import '../../App.css';
 import SideBar from './Sidebar';
 
 export default class Header extends Component {
