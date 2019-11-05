@@ -5,7 +5,7 @@ import Home from "./Components/views/Home";
 import Calculator from './Components/views/Calculator';
 import logFile from './Components/views/LogFile';
 
-import './App.css';
+//import './App.css';
 import './Components/DarkMode/index.css';
 
 
