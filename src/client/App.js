@@ -1,23 +1,31 @@
-import React, { Component } from 'react';
-import './app.css';
-import ReactImage from './react.png';
+import React, {Component} from 'react';
+import {  Route, Switch } from "react-router-dom";
 
-export default class App extends Component {
-  state = { username: null };
+import Home from "./Components/views/Home";
+import Calculator from './Components/views/Calculator';
+import logFile from './Components/views/LogFile';
 
-  componentDidMount() {
-    fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
-  }
+import './App.css';
+import './Components/DarkMode/index.css';
 
+
+class App extends Component {
   render() {
-    const { username } = this.state;
     return (
       <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
+      
+
+       
+    
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/calculator" component={Calculator} />
+          <Route path="/logs" component={logFile} />
+
+        </Switch>
       </div>
     );
   }
 }
+
+export default App;
